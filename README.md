@@ -9,7 +9,7 @@ sudo apt-get install docker-io
 
 ```bash
 sudo docker build -t strix .
-docker run -v $PWD/workdir:/app -it strix /bin/bash
+sudo docker run -v $PWD/workdir:/app -it strix /bin/bash
 cd /app
 ```
 

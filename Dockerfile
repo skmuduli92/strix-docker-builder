@@ -1,7 +1,7 @@
 
 FROM amd64/alpine
 
-RUN apk --no-cache add alpine-sdk wget ca-certificates zlib bash bash-completion
+RUN apk --no-cache add alpine-sdk bash bash-completion
 
 # make bash prettier
 COPY ./bash_config /root/.bashrc
@@ -20,6 +20,3 @@ RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/s
 
 COPY ./bin /bin
 COPY ./lib /lib
-
-# WORKDIR /root
-# ENTRYPOINT ["/bin/bash"]

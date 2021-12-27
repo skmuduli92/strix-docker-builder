@@ -21,5 +21,5 @@ RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/s
 COPY ./bin /bin
 COPY ./lib /lib
 
-WORKDIR /root
-ENTRYPOINT ["/bin/bash"]
+# WORKDIR /root
+# ENTRYPOINT ["/bin/bash"]

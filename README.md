@@ -9,7 +9,8 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 ```bash
 sudo docker build -t strix .
-sudo docker run -it strix
+docker run -v $PWD/workdir:/app -it strix /bin/bash
+cd /app
 ```
 
-To check if strix is installed correctly run `strix --version`
+To check if **strix** is installed correctly run `strix --version`

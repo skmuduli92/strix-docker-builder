@@ -1,0 +1,22 @@
+INFO {
+    TITLE:       "Modified Arbiter"
+    DESCRIPTION: "A modified arbiter with one client allowing no grants until a request is made"
+    SEMANTICS:   Mealy
+    TARGET:      Mealy
+}
+MAIN {
+    INPUTS {
+        req;
+    }
+    OUTPUTS {
+        grant;
+    }
+    ASSUMPTIONS {
+        G F req;
+    }
+    GUARANTEES {
+        G (!grant -> (!grant U req));
+        !grant;
+        G F grant;
+    }
+}

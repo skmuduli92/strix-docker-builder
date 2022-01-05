@@ -1,0 +1,22 @@
+INFO {
+    TITLE:       "Arbiter(2)"
+    DESCRIPTION: "An arbiter with two clients"
+    SEMANTICS:   Mealy
+    TARGET:      Mealy
+}
+MAIN {
+    INPUTS {
+        req1;
+        req2;
+    }
+    OUTPUTS {
+        grant1;
+        grant2;
+    }
+    ASSUMPTIONS {
+        
+    }
+    GUARANTEES {
+        
+    }
+}
